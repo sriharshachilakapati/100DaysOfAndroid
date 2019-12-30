@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">100 Days Of Android</string>
+    <string name="launcher_item_name_hint">Launcher item name</string>
+    <string name="launcher_item_name_text">Day %d: %s</string>
+    <string name="test_activity_message">This is test activity.\nThe launcher you see is day 1 work.</string>
+    <string name="icon">Icon</string>
+</resources>
