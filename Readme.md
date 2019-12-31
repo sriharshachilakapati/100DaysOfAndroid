@@ -15,3 +15,16 @@ Day 1 is for setting up, where I create an activity that allows me to launch the
 - `!!` operator can be used to annotate a type that it is not nullable
 - The Elvis operator `(?:)` of Kotlin that can be used to provide alternative if in case of `null`
 - Creating an `Intent` and using `startActivity()` to start another activity
+
+## Day 2
+
+The plan is to create a photo gallery with Grid layout manager and RecyclerView.
+
+### What I learned
+
+- Different views like `RecyclerView` and `CardView`
+- How to use `RecyclerView` as a `GridView`
+- Kotlin inner classes, and how they are different from Java's inner classes
+- Kotlin's `let`, `with`, `apply` and `also` functions
+- Kotlin function expressions
+- Using images stored as drawables

@@ -15,7 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val items = listOf<Class<out AppCompatActivity>>(TestActivity::class.java)
+        val items = listOf(
+            TestActivity::class.java,
+            PhotoGalleryActivity::class.java
+        )
 
         launcherListView.adapter =
             object : ArrayAdapter<Class<out AppCompatActivity>>(this, R.layout.launcher_item, items) {
