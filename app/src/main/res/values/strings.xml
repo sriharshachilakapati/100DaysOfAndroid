@@ -5,4 +5,6 @@
     <string name="test_activity_message">This is test activity.\nThe launcher you see is day 1 work.</string>
     <string name="icon">Icon</string>
     <string name="photo_gallery_cell">Photo Gallery Cell</string>
+    <string name="picked_image_desc">Image picked from intent</string>
+    <string name="pick_image_button_text">Pick Image</string>
 </resources>

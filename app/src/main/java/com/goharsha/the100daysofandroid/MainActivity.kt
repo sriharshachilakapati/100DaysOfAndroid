@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         val items = listOf(
             TestActivity::class.java,
-            PhotoGalleryActivity::class.java
+            PhotoGalleryActivity::class.java,
+            PickImageActivity::class.java
         )
 
         launcherListView.adapter =

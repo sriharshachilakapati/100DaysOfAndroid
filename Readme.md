@@ -28,3 +28,19 @@ The plan is to create a photo gallery with Grid layout manager and RecyclerView.
 - Kotlin's `let`, `with`, `apply` and `also` functions
 - Kotlin function expressions
 - Using images stored as drawables
+
+## Day 3
+
+This time I plan to learn picking images using an `Intent`, and display it in an `ImageView`. The idea is to find the path from the picker, read it into a `Bitmap` and show that in an `ImageView`.
+
+### What I learned
+
+- Creating intent with a type and action
+- Chooser intents
+- Responding to result of another activity with `onActivityResult`
+- Using `android:layout_weight` attribute to fill available space
+- Two ways of reading a bitmap from a `URI` using `ImageDecoder` and `MediaStore`
+- Function references in Kotlin
+- Kotlin's `@Suppress` annotation
+- Launching an activity using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F10</kbd> is possible if `android:exported="true"` is specified
+
