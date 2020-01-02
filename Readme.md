@@ -44,3 +44,16 @@ This time I plan to learn picking images using an `Intent`, and display it in an
 - Kotlin's `@Suppress` annotation
 - Launching an activity using <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F10</kbd> is possible if `android:exported="true"` is specified
 
+## Day 4
+
+Today I wanted to explore fragments. The idea is to have a fragment that shows content, and have menu in the activity to send events to the fragment.
+
+### What I learned
+
+- Fragments and their lifecycle. A shout-out to [xxv/android-lifecycle](https://github.com/xxv/android-lifecycle) for the diagram reference
+- Using the fragment support manager. We can also use the `<fragment>` tag in XML, but save it for later
+- Creating menu resources
+- Array resource files. Learned about string arrays are typed arrays
+- Creating a `Spinner` in a `MenuItem`
+- Kotlin's `lateinit` keyword allowing to initialize a value later
+- Scrolling with `ScrollView`

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_drawable_names">
+        <item>Black Swan</item>
+        <item>Kitten</item>
+        <item>Wood Pecker</item>
+        <item>Salamander</item>
+        <item>Turtle</item>
+    </string-array>
+
+    <array name="image_drawables">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+        <item>@drawable/image_3</item>
+        <item>@drawable/image_4</item>
+        <item>@drawable/image_5</item>
+    </array>
+</resources>

@@ -7,4 +7,15 @@
     <string name="photo_gallery_cell">Photo Gallery Cell</string>
     <string name="picked_image_desc">Image picked from intent</string>
     <string name="pick_image_button_text">Pick Image</string>
+    <string name="animal_info_picture">Animal Info Picture</string>
+    <string name="animal_info_content_title_hint">Black Swan</string>
+    <string name="animal_info_select_animal">Select Animal</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Consequat semper viverra nam libero
+        justo laoreet. Commodo viverra maecenas accumsan lacus vel facilisis. Pharetra vel turpis nunc eget lorem dolor
+        sed viverra ipsum. Diam quam nulla porttitor massa. Libero justo laoreet sit amet cursus sit. Est velit egestas
+        dui id ornare arcu odio. Amet mattis vulputate enim nulla aliquet. Eu ultrices vitae auctor eu augue.
+    </string>
 </resources>

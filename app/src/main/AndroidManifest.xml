@@ -22,7 +22,12 @@
 
         <activity android:name=".TestActivity" />
         <activity android:name=".PhotoGalleryActivity" />
-        <activity android:name=".PickImageActivity" android:exported="true" />
+        <activity
+            android:name=".PickImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalInfoActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
