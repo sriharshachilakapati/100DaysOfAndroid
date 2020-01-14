@@ -6,7 +6,7 @@ This repo is used to track 100 days of Android.
 
 Day 1 is for setting up, where I create an activity that allows me to launch the sub-app for each day's activity. A list view in an activity is enough.
 
-### What I learned
+### What I learnt
 
 - Different views, used `LinearLayout`, `TextView` and `ConstraintLayout`
 - Creating lists in Kotlin (`listOf` can take generic type parameters instead of inference)
@@ -20,7 +20,7 @@ Day 1 is for setting up, where I create an activity that allows me to launch the
 
 The plan is to create a photo gallery with Grid layout manager and RecyclerView.
 
-### What I learned
+### What I learnt
 
 - Different views like `RecyclerView` and `CardView`
 - How to use `RecyclerView` as a `GridView`
@@ -33,7 +33,7 @@ The plan is to create a photo gallery with Grid layout manager and RecyclerView.
 
 This time I plan to learn picking images using an `Intent`, and display it in an `ImageView`. The idea is to find the path from the picker, read it into a `Bitmap` and show that in an `ImageView`.
 
-### What I learned
+### What I learnt
 
 - Creating intent with a type and action
 - Chooser intents
@@ -48,7 +48,7 @@ This time I plan to learn picking images using an `Intent`, and display it in an
 
 Today I wanted to explore fragments. The idea is to have a fragment that shows content, and have menu in the activity to send events to the fragment.
 
-### What I learned
+### What I learnt
 
 - Fragments and their lifecycle. A shout-out to [xxv/android-lifecycle](https://github.com/xxv/android-lifecycle) for the diagram reference
 - Using the fragment support manager. We can also use the `<fragment>` tag in XML, but save it for later
@@ -57,3 +57,13 @@ Today I wanted to explore fragments. The idea is to have a fragment that shows c
 - Creating a `Spinner` in a `MenuItem`
 - Kotlin's `lateinit` keyword allowing to initialize a value later
 - Scrolling with `ScrollView`
+
+## Day 5, 6 and 7
+
+I couldn't continue because of work. But still, I'm glad that I used fragments in real work, which I learnt of Day 4. My reading has continued though.
+
+### What I learnt
+
+- Maps in Kotlin. I have modified the launcher to show customized text instead of simply displaying the activity name.
+- Type aliases. Use them to shorten out types. Would've been better if local or scoped aliases are supported though.
+- Using `tools:ignore` in layout XML files.

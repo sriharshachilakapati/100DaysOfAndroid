@@ -1,5 +1,6 @@
 package com.goharsha.the100daysofandroid
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,40 +11,48 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
+typealias LauncherModel = Class<out AppCompatActivity>
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val items = listOf(
-            TestActivity::class.java,
-            PhotoGalleryActivity::class.java,
-            PickImageActivity::class.java,
-            AnimalInfoActivity::class.java
+        val contents = mapOf(
+            TestActivity::class.java to "Test Activity",
+            PhotoGalleryActivity::class.java to "Photo Gallery with Drawables",
+            PickImageActivity::class.java to "Image Picker",
+            AnimalInfoActivity::class.java to "Animal Info with Fragment"
         )
 
-        launcherListView.adapter =
-            object : ArrayAdapter<Class<out AppCompatActivity>>(this, R.layout.launcher_item, items) {
-                override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-                    val view = convertView ?: LayoutInflater.from(this@MainActivity).inflate(
-                        R.layout.launcher_item,
-                        parent,
-                        false
-                    )
-                    val activity = getItem(position)!!
+        launcherListView.adapter = LauncherItemAdapter(this, contents)
+    }
 
-                    val textView = view.findViewById<TextView>(R.id.launcherItemName)
-                    textView.text = this@MainActivity.resources
-                        .getString(R.string.launcher_item_name_text)
-                        .format(position + 1, activity.simpleName)
+    private class LauncherItemAdapter(context: Context, private val contents: Map<LauncherModel, String>) :
+        ArrayAdapter<LauncherModel>(context, R.layout.launcher_item, contents.keys.toTypedArray()) {
 
-                    view.setOnClickListener {
-                        val intent = Intent(this@MainActivity, activity)
-                        startActivity(intent)
-                    }
+        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+            val view = convertView ?: LayoutInflater.from(context).inflate(
+                R.layout.launcher_item,
+                parent,
+                false
+            )
 
-                    return view
+            val activity = getItem(position)!!
+            val text = contents[activity]
+
+            view.apply {
+                findViewById<TextView>(R.id.launcherItemName).text = context.resources
+                    .getString(R.string.launcher_item_name_text)
+                    .format(position + 1, text)
+
+                setOnClickListener {
+                    val intent = Intent(context, activity)
+                    context.startActivity(intent)
                 }
             }
+
+            return view
+        }
     }
 }
