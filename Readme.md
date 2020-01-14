@@ -67,3 +67,20 @@ I couldn't continue because of work. But still, I'm glad that I used fragments i
 - Maps in Kotlin. I have modified the launcher to show customized text instead of simply displaying the activity name.
 - Type aliases. Use them to shorten out types. Would've been better if local or scoped aliases are supported though.
 - Using `tools:ignore` in layout XML files.
+
+## Day 8
+
+A few days were spent in work and other personal stuff. Now am resuming the day 8, and today's plan is to do the Image Picker part 2, where instead of picking from the gallery, we take from camera.
+
+### What I learnt
+
+- How to invoke the Camera app via intent, and to take a thumbnail
+- How to ask the Camera app to write to a file (not shown in Gallery)
+- Using the Android's `FileProvider` class
+- How content providers work in Android
+- Kotlin's built-in `Pair` generic data class
+- Kotlin's string-interpolation
+- Using radio buttons in menu items
+- How Permissions work in Android and how features are used by the Play Store
+- Using XML resources in Android
+- Using Lambdas and Function References to create delegates (Idea from C#)

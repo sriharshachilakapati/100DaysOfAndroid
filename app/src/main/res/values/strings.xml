@@ -7,6 +7,7 @@
     <string name="photo_gallery_cell">Photo Gallery Cell</string>
     <string name="picked_image_desc">Image picked from intent</string>
     <string name="pick_image_button_text">Pick Image</string>
+    <string name="take_image_button_text">Take Image</string>
     <string name="animal_info_picture">Animal Info Picture</string>
     <string name="animal_info_content_title_hint">Black Swan</string>
     <string name="animal_info_select_animal">Select Animal</string>
@@ -18,4 +19,7 @@
         sed viverra ipsum. Diam quam nulla porttitor massa. Libero justo laoreet sit amet cursus sit. Est velit egestas
         dui id ornare arcu odio. Amet mattis vulputate enim nulla aliquet. Eu ultrices vitae auctor eu augue.
     </string>
+    <string name="capture_quality">Capture Quality</string>
+    <string name="thumbnail_only">Thumbnail only</string>
+    <string name="full_quality">Full Quality</string>
 </resources>

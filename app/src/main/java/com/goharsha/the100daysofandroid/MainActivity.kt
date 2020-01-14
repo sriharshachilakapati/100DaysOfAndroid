@@ -11,7 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-typealias LauncherModel = Class<out AppCompatActivity>
+typealias LauncherModel = Pair<Int, Class<out AppCompatActivity>>
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,10 +19,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val contents = mapOf(
-            TestActivity::class.java to "Test Activity",
-            PhotoGalleryActivity::class.java to "Photo Gallery with Drawables",
-            PickImageActivity::class.java to "Image Picker",
-            AnimalInfoActivity::class.java to "Animal Info with Fragment"
+            Pair(1, TestActivity::class.java) to "Test Activity",
+            Pair(2, PhotoGalleryActivity::class.java) to "Photo Gallery with Drawables",
+            Pair(3, PickImageActivity::class.java) to "Image Picker",
+            Pair(4, AnimalInfoActivity::class.java) to "Animal Info with Fragment",
+            Pair(8, TakeImageActivity::class.java) to "Image Capture (with Delegation)"
         )
 
         launcherListView.adapter = LauncherItemAdapter(this, contents)
@@ -38,13 +39,15 @@ class MainActivity : AppCompatActivity() {
                 false
             )
 
-            val activity = getItem(position)!!
-            val text = contents[activity]
+            val model = getItem(position)!!
+            val day = model.first
+            val activity = model.second
+            val text = contents[model]
 
             view.apply {
                 findViewById<TextView>(R.id.launcherItemName).text = context.resources
                     .getString(R.string.launcher_item_name_text)
-                    .format(position + 1, text)
+                    .format(day, text)
 
                 setOnClickListener {
                     val intent = Intent(context, activity)
