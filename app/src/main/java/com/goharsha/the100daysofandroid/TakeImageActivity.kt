@@ -116,4 +116,12 @@ class TakeImageActivity : AppCompatActivity() {
 
         return true
     }
+
+    override fun onDestroy() {
+        if (!isChangingConfigurations) {
+            File(capturedImagePath).delete()
+        }
+
+        super.onDestroy()
+    }
 }
